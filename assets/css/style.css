@@ -230,9 +230,10 @@ html, body {
 
     .hero .introduction img{
         padding-top: 6rem;
-        width: 50%;
+        width: 90%;
         display:block;
         margin:auto;
+        border-radius: 5px;
     }
 
     .hero .introduction:last-child{
