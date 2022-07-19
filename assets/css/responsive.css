@@ -311,11 +311,6 @@
 		height: 360px
 	}
 
-	/* SITEMAIN
-	================================================== */
-	.site-main {
-		margin-bottom: 140px;
-	}
 
 	/* site-section */
 	.site-section {
@@ -401,6 +396,7 @@
 	}
 }
 
+
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 479px) {
 	.visible-xxs {
@@ -413,11 +409,6 @@
 		margin-top: 10px;
 	}
 
-	/* SITEMAIN
-	================================================== */
-	.site-main {
-		margin-bottom: 180px;
-	}
 
 	/* Section: Portfolio */
 	.section-portfolio .col-xs-6 {
