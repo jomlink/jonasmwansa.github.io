@@ -182,12 +182,10 @@ html, body {
 
 /* HERO
 ================================================== */
-.hero { 
-    background: url(../img/hero.jpg) no-repeat center / cover; 
-    height: 100%;
-    width: 100%;
-}
 
+.hero{
+    height:100vh;
+}
 
 .hero .row {
     display: flex;
@@ -217,11 +215,6 @@ html, body {
 
 @media (max-width:576px){
  
-    .hero { 
-        background: url(../img/hero.jpg) no-repeat center / cover; 
-        height: 50%;
-        width: 100%;
-    }
 
     .hero .introduction{
         width:100%;
@@ -238,7 +231,8 @@ html, body {
 
     .hero .introduction:last-child{
         padding-top: 10px;
-        margin-left: 21%;
+        text-align: center;
+        padding: 30px;
     }
 
 
@@ -272,7 +266,6 @@ html, body {
 ================================================== */
 .site-main {
     position: relative;
-    margin-bottom: 100px;
     background-color: #fff;
     z-index: 1;
 }
@@ -290,6 +283,28 @@ html, body {
 
 .img-lines {
     margin: 15px 0 40px;
+}
+
+
+.site-section .experience img{
+    padding-top: 20px;
+    width: 300px;
+    height: 300px;
+}
+
+@media (min-width: 768px){
+    .site-section .content{
+        display: flex;
+    }
+
+    .site-section .experience img{
+        padding-top: 20px;
+        padding-bottom: 30px;
+        width: 300px;
+        height: 300px;
+        padding-bottom: 20px;
+
+    }
 }
 
 .site-section p {
@@ -320,7 +335,7 @@ html, body {
 }
 
 .progress-bar {
-    background-color: #212121;  
+    border-radius: 2px;
 }
 
 /* Section: Services */
@@ -349,11 +364,19 @@ html, body {
     left: 0;
     z-index: 0;
 }
-/* 
-#service .service{
-    border: 1px lightslategray;
-    border-radius: 2px;
-} */
+
+#service .col-sm-3{
+    border-radius: 5px;
+}
+
+#service .col-sm-3:hover{
+    padding-top: 1em;
+    border-radius: 5px;
+    background-color: dodgerblue;
+    box-shadow: 0px 7px 8px lightblue;
+    transition: 2s;
+
+} 
 
 .section-services .container {
     padding: 120px 100px;
@@ -378,6 +401,67 @@ html, body {
     width: 50px;
     height: 50px;
 }
+
+
+/* Section: Services */
+.section-education {
+    position: relative;
+    padding-top: 220px;
+}
+
+.section-education:before {
+    content: '';
+    background: url(../img/service-bg.jpg) no-repeat fixed center / cover;
+    width: 100%;
+    height: 400px; 
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.overlay:after {
+    content: '';
+    width: 100%;
+    height: 400px; 
+    position: absolute;
+    background-color: rgba(173, 121, 121, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#education .col-sm-3{
+    border-radius: 5px;
+}
+
+#education .col-sm-3:hover{
+    padding-top: 1em;
+    border-radius: 5px;
+    background-color: dodgerblue;
+    box-shadow: 0px 7px 8px lightblue;
+    transition: 2s;
+
+} 
+
+.section-education .container {
+    padding: 120px 100px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0px 0px 40px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.education h4 {
+    margin: 25px 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.education p {
+    color: #000;
+    margin-bottom: 0;
+}
+
 
 /* Section: projects */
 .section-projects {
@@ -505,7 +589,7 @@ html, body {
 
 /* Section: Counters */
 .section-counters {
-    background: url(../img/counters-bg.jpg) no-repeat fixed center / cover;
+    background: url(../img/background.png) no-repeat fixed center / cover;
     width: 100%;
     padding: 100px 0;
     position: relative;
@@ -532,39 +616,6 @@ html, body {
     color: #fff;
     margin: 0;
     line-height: 0.8;
-}
-
-/* Section: Form*/
-.section-form {
-    padding-bottom: 120px;
-}
-
-.section-form .btn {
-    margin-top: 40px;
-}
-
-/* FOOTER
-================================================== */
-
-
-.icon {
-    line-height: 40px;
-    padding: 9px 11px;
-    color: #fff;
-    border: 1px solid #fff;
-    border-radius: 50%;
-}
-
-.icon + .icon {
-    margin-left: 5px;
-}
-
-.icon i:before {
-    margin:0;
-}
-
-.icon:hover {
-    background-color: #fff;
 }
 
 
@@ -653,7 +704,7 @@ html, body {
 }
 
 .contact-details {
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-shadow: 2px 2px 1px #1f1f1f;
   transition: transform 0.3s ease-out;
 }
